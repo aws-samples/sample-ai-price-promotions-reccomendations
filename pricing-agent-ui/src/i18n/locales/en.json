@@ -1,0 +1,101 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "thinking": "Thinking...",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "home": "Home",
+        "goBack": "Go Back",
+        "noResources": "No resources",
+        "unknownValue": "Unknown Value",
+        "copyright": "All Rights Reserved"
+    },
+    "auth": {
+        "loginWithCognito": "Login with Amazon Cognito",
+        "resetPassword": "Reset Password"
+    },
+    "home": {
+        "title": "Retail Pricing Assistant",
+        "subtitle": "Revolutionizing retail pricing through collaborative AI intelligence.",
+        "poweredBy": "Powered by Amazon Bedrock Agents"
+    },
+    "pricing": {
+        "agentChats": "Agent Chats",
+        "workflow": "Workflow",
+        "priceSuggestions": "Price suggestions",
+        "generatePrice": "Generate Price",
+        "setPrice": "Set price"
+    },
+    "product": {
+        "productList": "Product List",
+        "productTypes": "Product Types",
+        "productDisplayPage": "Product Display Page",
+        "features": "Features",
+        "specifications": "Specifications",
+        "confirmPersona": "Confirm Persona"
+    },
+    "personalizedPricing": {
+        "title": "Personalized Pricing",
+        "noData": "No personalized pricing available. Select a customer profile on the Home page to generate personalized pricing.",
+        "personalizedPrice": "Personalized Price",
+        "basePrice": "Base Price",
+        "youSave": "You Save",
+        "discountBreakdown": "Discount Breakdown",
+        "loyaltyTier": "Loyalty Tier",
+        "paymentBonus": "Payment Bonus",
+        "personaReward": "Persona Reward",
+        "marginValidation": "Margin Validation",
+        "offerDetails": "Offer Details"
+    },
+    "competitor": {
+        "marketPosition": "Market Position",
+        "noProducts": "No competitor products found. The agent will populate this with live market data."
+    },
+    "demand": {
+        "rationale": "Rationale"
+    },
+    "executions": {
+        "title": "Executions"
+    },
+    "notFound": {
+        "title": "Houston we have a problem!!",
+        "message": "Oops! The page you're looking for has floated away."
+    },
+    "info": {
+        "learnMore": "Learn more",
+        "amazonPersonalize": "Amazon Personalize",
+        "amazonBedrock": "Amazon Bedrock",
+        "marketingPersonalizations": "Marketing Personalizations",
+        "dataCustomization": "Data-driven customization",
+        "dataCustomizationDesc": "A hyper personalized marketing email generator utilizes vast amounts of customer data, including demographics, purchase history, browsing behavior, and engagement metrics to create highly tailored email content for each individual recipient.",
+        "dynamicAdaptation": "Dynamic adaptation",
+        "dynamicAdaptationDesc": "Generative AI enables the creation of email content that can adapt in real-time based on the latest customer interactions, market trends, or even current events, ensuring that each email is not only personalized but also timely and contextually relevant.",
+        "scalability": "Scalability and efficiency:",
+        "scalabilityDesc": "Despite the high level of personalization, these generators can produce large volumes of individualized emails efficiently, enabling marketers to reach entire customer bases with hyper-personalized content without sacrificing speed or quality."
+    },
+    "disclaimer": {
+        "agree": "Agree",
+        "disagree": "Disagree",
+        "intro": "The Terms of Use provided below are designed to promote the safe and secure use of demos hosted on the AWS Demo Portal. Because inappropriate use of these demos can expose AWS, and Amazon generally, to security, compliance, and legal risks, and loss of customer trust, please familiarize yourself with the following:",
+        "facilitatorsHeader": "For Event Facilitators (individuals running events using AWS Demo Portal):",
+        "audienceView": "Demo audiences are permitted only to view the demonstration being conducted by an AWS Employee.",
+        "noConsumption": "Consumption of demo content, its code, or engineering artifacts, directly by customer is strictly prohibited. However, AWS Employees are permitted to use these projects as inspiration for their work with customers.",
+        "noCustomerData": "Exercise caution by refraining from using any customer-specific data, including in-scope for regulation under PII, HIPAA, GDPR, or CCPA when running a given demo. Use purely fictional examples as provided in the demo itself.",
+        "securityBestPractices": "Use security best-practices and recommendations.",
+        "protectInfo": "Protect information from unauthorized access or misuse. See the AWS Private Information Protocols for more information on how we protect information at AWS.",
+        "exitDemo": "Once an event is completed, promptly exit the demo and remove any associated data.",
+        "noConcurrent": "Do not run multiple concurrent demos",
+        "allUsersHeader": "All users must not:",
+        "noNonEmployee": "Under any circumstances, permit any non-AWS employee to directly access the demo in any way.",
+        "awsEmployeesOnly": "At this time these demos are intended only for live or recorded presentations or demonstrations by AWS employees.",
+        "noUnauthorizedAccess": "Attempt to access data that they are not authorized to use or access.",
+        "noUnauthorizedChanges": "Perform any unauthorized changes or store unapproved company data within demo content.",
+        "noStaticPasswords": "Provide static passwords, such as default or actual passwords.",
+        "noLimitChanges": "Change or modify limits out of band for accounts.",
+        "noDataTransfer": "Transfer data or software to any person or organization outside AWS without the permission of AWS AppSec and AWS Legal.",
+        "noIPViolation": "Use any material or information, including images, logos, or photographs in any manner that violates copyright, trademark, or intellectual property laws.",
+        "noThirdPartyCompete": "Use information/data about a demo participant's usage of third-party products/services/models (e.g., third party models on Amazon Bedrock) during a an event to compete against those third-party products/services/models.",
+        "noThirdPartyShare": "Share data about a demo participant's usage of third-party products/services/models (e.g., third-party models on Amazon Bedrock) during an event with first party AWS Service Teams.",
+        "closingWarning": "AWS Demo Portal users should follow the above steps and take all necessary precautions to protect customer data and Amazon Confidential Information. Please see the AWS Private Information Protocols for more information on AWS guidelines for using, accessing, storing, and sharing non-public information we have about AWS, our customers, or third parties. Misuse of AWS Demo Portal may result in the suspension of access to AWS Demo Portal, or escalation to your manager and AWS Security."
+    }
+}

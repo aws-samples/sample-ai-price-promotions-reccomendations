@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+*.egg
+
+# Generated seed data
+seed_output/
+
+# AgentCore CLI config (contains runtime IDs, session IDs)
+.bedrock_agentcore.yaml
+.bedrock_agentcore/
+
+# Deployment outputs
+deployment.json
+memory_config.json
+
+# CDK
+infra/.venv/
+infra/cdk.out/
+infra/.cdk.staging/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+
+# Temp
+/tmp/
+*.zip

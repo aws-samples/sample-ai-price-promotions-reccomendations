@@ -1,0 +1,49 @@
+# Nested repos (original project, not part of this repo)
+retail-pricing-agent-orchestrator/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# Generated / runtime artifacts
+seed_output/
+cdk.out/
+.cdk.staging/
+*.zip
+
+# AgentCore CLI (auto-generated, contains runtime IDs)
+.bedrock_agentcore.yaml
+.bedrock_agentcore/
+deployment.json
+memory_config.json
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+/tmp/
+
+# Security remediation notes
+APPSEC_REMEDIATION.md
+
+# Lock files (optional — remove this line if you want to commit them)
+# package-lock.json

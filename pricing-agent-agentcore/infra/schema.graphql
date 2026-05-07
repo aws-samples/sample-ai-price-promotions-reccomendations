@@ -1,0 +1,112 @@
+type Pricing {
+    id: ID!
+    userId: ID
+    product: AWSJSON
+    demandForecast: AWSJSON
+    webScrap: AWSJSON
+    marginAnalysis: AWSJSON
+    personalizedPricing: AWSJSON
+    botResponses: AWSJSON
+    status: String
+    createdAt: AWSDateTime
+    updatedAt: AWSDateTime
+}
+
+type PricingConnection {
+    items: [Pricing]
+    nextToken: String
+}
+
+input CreatePricingInput {
+    id: ID
+    userId: ID!
+    product: AWSJSON
+    demandForecast: AWSJSON
+    webScrap: AWSJSON
+    marginAnalysis: AWSJSON
+    personalizedPricing: AWSJSON
+    botResponses: AWSJSON
+    status: String
+}
+
+input UpdatePricingInput {
+    id: ID!
+    userId: ID
+    product: AWSJSON
+    demandForecast: AWSJSON
+    webScrap: AWSJSON
+    marginAnalysis: AWSJSON
+    personalizedPricing: AWSJSON
+    botResponses: AWSJSON
+    status: String
+}
+
+input DeletePricingInput {
+    id: ID!
+}
+
+input ModelPricingConditionInput {
+    userId: ModelIDInput
+    status: ModelStringInput
+    and: [ModelPricingConditionInput]
+    or: [ModelPricingConditionInput]
+    not: ModelPricingConditionInput
+}
+
+input ModelPricingFilterInput {
+    id: ModelIDInput
+    userId: ModelIDInput
+    status: ModelStringInput
+    and: [ModelPricingFilterInput]
+    or: [ModelPricingFilterInput]
+    not: ModelPricingFilterInput
+}
+
+input ModelIDInput {
+    ne: ID
+    eq: ID
+    le: ID
+    lt: ID
+    ge: ID
+    gt: ID
+    contains: ID
+    notContains: ID
+    between: [ID]
+    beginsWith: ID
+}
+
+input ModelStringInput {
+    ne: String
+    eq: String
+    le: String
+    lt: String
+    ge: String
+    gt: String
+    contains: String
+    notContains: String
+    between: [String]
+    beginsWith: String
+}
+
+enum ModelSortDirection {
+    ASC
+    DESC
+}
+
+type Query {
+    getPricing(id: ID!): Pricing
+    listPricings(filter: ModelPricingFilterInput, limit: Int, nextToken: String): PricingConnection
+    pricingByUserId(userId: ID!, sortDirection: ModelSortDirection, filter: ModelPricingFilterInput, limit: Int, nextToken: String): PricingConnection
+}
+
+type Mutation {
+    createPricing(input: CreatePricingInput!, condition: ModelPricingConditionInput): Pricing
+    updatePricing(input: UpdatePricingInput!, condition: ModelPricingConditionInput): Pricing
+    deletePricing(input: DeletePricingInput!, condition: ModelPricingConditionInput): Pricing
+    resolverLambda(args: String): AWSJSON
+}
+
+type Subscription {
+    onPricingById(id: ID!): Pricing
+        @aws_subscribe(mutations: ["updatePricing"])
+}

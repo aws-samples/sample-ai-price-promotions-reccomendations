@@ -1,0 +1,13 @@
+# Semgrep ignore file
+# https://semgrep.dev/docs/ignoring-files-folders-code
+
+# Build outputs
+dist/
+build/
+node_modules/
+.venv/
+seed_output/
+
+# Generated files
+*.min.js
+*.bundle.js

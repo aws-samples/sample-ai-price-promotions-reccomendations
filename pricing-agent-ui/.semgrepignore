@@ -1,0 +1,3 @@
+# Semgrep ignore file for frontend
+dist/
+node_modules/
